@@ -6,12 +6,12 @@
  * Return: 0
  */
 
-int main(0)
+int main(void)
 {
-	printf("sizeof(char) = %d\n", sizeof(char));
-	printf("sizeof(int) = %d\n", sizeof(int));
-	printf("sizeof(long long) = %d\n", sizeof(long long));
-	printf("sizeof(long) = %d\n", sizeof(long));
-	printf("sizeof(float) = %d\n", sizeof(float));
+	printf("Size of a char: %zu byte(s)\n", sizeof(char));
+	printf("Size of an int: %zu byte(s)\n", sizeof(int));
+	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %zu byte(s)\n", sizeof(float));
 	return (0);
 }
