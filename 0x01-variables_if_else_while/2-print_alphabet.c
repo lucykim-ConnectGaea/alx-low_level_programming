@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main- Entry point
  * @void: Null value
  *
  * Description: Alphabets
- * Return:0
+ * Return: Zero value
  */
 
 int main(void)
 {
 	char c;
 
-	for (c = 'a'; c = 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
 	putchar('\n');
 	return (0);
