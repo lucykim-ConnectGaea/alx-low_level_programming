@@ -1,16 +1,20 @@
-#include<stdio.h>
+#include "main.h"
 
 /**
- * main - entiry point
- * @void : Null Value
- *
- * Description: Prints putchar in a new line
+ * main - entry point
  * Return: 0
-*/
+ */
 
 int main(void)
 {
-	printf("_putchar");
+	_putchar('-');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
-
