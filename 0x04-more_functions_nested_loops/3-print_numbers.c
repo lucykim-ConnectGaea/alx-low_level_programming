@@ -1,22 +1,17 @@
 #include "main.h"
-#include <stdio.h>
-#include <unistd.h>
 
 /**
- * print_numbers - entry point
- * @void: Null value
- *
- * Description: Prints numbers from 0 to 9
- * Return: 0 when sucessful
- */
-
+  * print_numbers - Entry point
+  * Description: function that prints the numbers, from 0 to 9.
+  * Return: void
+  */
 void print_numbers(void)
 {
-	int a;
+	int i;
 
-	for (a = 0; a < 9; a++)
+	for (i = 0; i <= 9; i++)
 	{
-		_putchar(a + '0');
+		_putchar(i + '0');
 	}
 	_putchar('\n');
 }
