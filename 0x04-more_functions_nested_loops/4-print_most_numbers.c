@@ -1,23 +1,22 @@
+/*
+ * File: 4-print_most_numbers.c
+ * Auth: Suara Ayomide
+ */
+
 #include "main.h"
 
 /**
- * more_numbers - prints tens times the numbers
- * @void: Null value
- *
- * Description: prints 10 times the numbers
- * Return: 0
+ * print_most_numbers - Prints the numbers from 0-9 except for 2 and 4.
  */
-
-void more_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
-	
-	for (i = 0; i < 14; i++)
+
+	for (i = 0; i <= 9; i++)
 	{
-		if (i == 2 || i == 4)
-		{
-			continue;
-		}
+		if (i != 2 && i != 4)
+			_putchar((i % 10) + '0');
 	}
-	_putchar (i);
+
+	_putchar('\n');
 }
