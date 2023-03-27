@@ -2,18 +2,21 @@
 #include <string.h>
 
 /**
-  * print_rev - function that prints a string in reverse
+  * print_rev - function that prints a string, in reverse
   *
-  * @s: string to print
+  * @s:p\ parameter
   * Return: void
   */
 void print_rev(char *s)
 {
-	int length = strlen(s);
+	int i;
 
-	for (int i = length - 1; i >= 0; i--)
+	i = strlen(s);
+	i--;
+	while (i >= 0)
 	{
 		_putchar(s[i]);
+		i--;
 	}
 	_putchar('\n');
 }
