@@ -1,20 +1,20 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
+#include "main.h"
 
 /**
- * str_concat - function to concatenates two strings
+ * str_concat - function to concatenate two strings
  * @s1: String one
- * @s2: string two
- * Return: NULL if strings are null or new allocated mem
+ * @s2: String two
+ * Return: Pointer to the concatenated string or NULL on failure
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char *a;
 	int i;
 	int j;
-	/**if NULL is passed, treat it as an empty string*/
+	char *result;
+	int len1;
+	int len2;
 
 	if (s1 == NULL)
 	{
@@ -24,25 +24,29 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	len1 = 0;
+	len2 = 0;
+	while (s1[len1] != '\0')
 	{
+		len1++;
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	while (s2[len2] != '\0')
 	{
+		len2++;
 	}
-	a = (char *)malloc(sizeof(char) * (i + j) + 1);
-	if (a == NULL)
+	result = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	if (result == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; i < len1; i++)
 	{
-		a[i] = s1[i];
+		result[i] = s1[i];
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	for (j = 0; j < len2; j++)
 	{
-		a[i + j] = s2[j];
-		a[i + j] = '\0';
+		result[i + j] = s2[j];
+		result[i + j] = '\0';
 	}
-	return (a);
+	return (result);
 }
