@@ -19,3 +19,4 @@ The _strdup() function returns a pointer to a new string which is a duplicate of
 Returns NULL if str = NULL
 On success, the _strdup function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available
 FYI: The standard library provides a similar function: strdup. Run man strdup to learn more.
+
