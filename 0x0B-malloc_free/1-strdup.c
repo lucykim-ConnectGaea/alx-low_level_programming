@@ -31,5 +31,6 @@ char *_strdup(char *str)
 		a[z] = str[z];
 		z++;
 	}
+	a[y + 1] = '\0';
 	return (a);
 }
