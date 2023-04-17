@@ -3,10 +3,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * struct dog - structure
+ * @name:element 1
+ * @age: element 2
+ * @owner:element 3
+ */
+
 struct dog
 {
-	char* name;
-	float* age;
-	char* owner;
+	char *name;
+	float age;
+	char *owner;
 };
 #endif
