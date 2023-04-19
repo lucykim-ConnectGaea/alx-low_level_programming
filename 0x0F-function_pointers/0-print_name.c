@@ -14,5 +14,9 @@ void print_name(char *name, void (*f)(char *))
 	/**The print_name function calls*/
 	/**the function pointed to by f,*/
 	/**passing in the name argument*/
+	if (name == NULL || f == NULL)
+	{
+		return;
+	}
 	f(name);
 }
