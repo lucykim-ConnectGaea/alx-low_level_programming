@@ -18,19 +18,13 @@ int main(void)
 			{
 				continue;
 			}
-			if (a < 10)/**ddts with 0 at the bgn*/
-			{
-				putchar('0');
-			}
+			/**if (a < 10) ddts with 0 at the bgn*/
+			
 			putchar(a / 10 + '0');
 			putchar(a % 10 + '0');
 
-			putchar (' ');
+			putchar(' ');
 
-			if (j < 10)
-			{
-				putchar('0');
-			}
 			putchar(j / 10 + '0');
 			putchar(j % 10 + '0');
 
