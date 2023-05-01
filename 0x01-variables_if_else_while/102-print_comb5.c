@@ -19,7 +19,6 @@ int main(void)
 				continue;
 			}
 			/**if (a < 10) ddts with 0 at the bgn*/
-			
 			putchar(a / 10 + '0');
 			putchar(a % 10 + '0');
 
