@@ -13,10 +13,17 @@ int main(void)
 	int a;
 	int n;
 
-	for (a = '0'; a <= '9'; a++)
-		putchar(a);
-	for (n = '0'; n <= '9'; n++)
-		putchar(n);
-	putchar("%d%d\n", a, n)
-	return (0);
+	for (a = '0'; a <= '8'; a++)
+		for (n = a + 1; n <= 9; n++)
+		{
+			putchar(a + '0');
+			putchar(n + '0');
+			if (a != 8 || n != 9)
+			{
+				putchar (',');
+				putchar (' ');
+			}
+		}
+	putchar('\n');
+	return(0);
 }
