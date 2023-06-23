@@ -19,6 +19,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		action(array[i]);/** here the function takes an array its size and apointer as arguments*/
+		action(array[i]);/**arg are array,size and pointer*/
 	}
 }
