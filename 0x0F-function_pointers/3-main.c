@@ -6,7 +6,7 @@
  * main - fucntion
  * @argc: argument count
  * @argv: value
- * Return: error or result
+ * Return: error or op_result
  */
 
 int main(int argc, char **argv)
@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	int num1;
 	int num2;
 	char get_op;
-	int op_result;
+	int result;
 
 	if (argc != 4)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	get_op = argv[2][0];
 	num2 = atoi(argv[3]);
-	op_result = (get_op == '+') ? num1 + num2 :
+	result = (get_op == '+') ? num1 + num2 :
 		(get_op == '-') ? num1 - num2 :
 		(get_op == '*') ? num1 * num2 :
 		(get_op == '/' && num2 != 0) ? num1 / num2 :
@@ -42,5 +42,5 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (99);
 	}
-	return (op_result);
+	return (result);
 }
